@@ -11,6 +11,8 @@
 		71497AB52AD467FD00D6BB60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71497AB42AD467FD00D6BB60 /* ContentView.swift */; };
 		71497AB72AD4680000D6BB60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71497AB62AD4680000D6BB60 /* Assets.xcassets */; };
 		71497ABA2AD4680000D6BB60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71497AB92AD4680000D6BB60 /* Preview Assets.xcassets */; };
+		71497AC12AD468B800D6BB60 /* SpeechRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71497AC02AD468B800D6BB60 /* SpeechRecorder.swift */; };
+		71497AC32AD46AEF00D6BB60 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71497AC22AD46AEF00D6BB60 /* SpeechManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		71497AB42AD467FD00D6BB60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71497AB62AD4680000D6BB60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71497AB92AD4680000D6BB60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71497AC02AD468B800D6BB60 /* SpeechRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecorder.swift; sourceTree = "<group>"; };
+		71497AC22AD46AEF00D6BB60 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 		71497AA62AD467FD00D6BB60 = {
 			isa = PBXGroup;
 			children = (
+				71497AC22AD46AEF00D6BB60 /* SpeechManager.swift */,
 				71497AB12AD467FD00D6BB60 /* YUI_AUT */,
 				71497AB02AD467FD00D6BB60 /* Products */,
 			);
@@ -52,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				71497AB22AD467FD00D6BB60 /* YUI_AUTApp.swift */,
+				71497AC02AD468B800D6BB60 /* SpeechRecorder.swift */,
 				71497AB42AD467FD00D6BB60 /* ContentView.swift */,
 				71497AB62AD4680000D6BB60 /* Assets.xcassets */,
 				71497AB82AD4680000D6BB60 /* Preview Content */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71497AB52AD467FD00D6BB60 /* ContentView.swift in Sources */,
+				71497AC32AD46AEF00D6BB60 /* SpeechManager.swift in Sources */,
+				71497AC12AD468B800D6BB60 /* SpeechRecorder.swift in Sources */,
 				71497AB32AD467FD00D6BB60 /* YUI_AUTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +283,14 @@
 				DEVELOPMENT_TEAM = AGS5SL5799;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +315,14 @@
 				DEVELOPMENT_TEAM = AGS5SL5799;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
